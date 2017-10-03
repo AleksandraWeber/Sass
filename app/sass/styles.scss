@@ -1,0 +1,125 @@
+
+.container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ $globalColor: green;
+
+
+// /* wspolna czesc kodu dla kadzego elementu */
+// .dlugoszSzerokosc {
+// 	width: 200px;
+// 	height: 300px;
+// }
+
+// /* dynamiczny mixin dla tła elementu */
+// @mixin bg-color($color) {
+//     background-color: $color;
+// }
+
+// .box1{
+// 	@extend .dlugoszSzerokosc;
+// 	@include bg-color(green); 
+// }
+// .box2{
+// 	@extend .dlugoszSzerokosc;
+// 	@include bg-color(red);
+// }
+// .box3{
+// 	@extend .dlugoszSzerokosc;
+// 	@include bg-color(blue);
+// }
+// .box4{
+// 	@extend .dlugoszSzerokosc;
+// 	@include bg-color(brown);
+// }
+
+// .box5, .box6, .box7, .box8{
+// 	@extend .dlugoszSzerokosc;
+// 	@include bg-color($globalColor);
+// }
+
+@mixin zmianaTlaNaJasniejsze($color, $opacity) {
+		background-color: $color;
+		opacity: $opacity;
+}
+
+
+@for $i from 1 through 10 {
+  .petla{
+    &:nth-child(#{$i}) {
+      &:after{
+				content: "#{$i}";
+				}
+			&{
+				@include zmianaTlaNaJasniejsze(#29b3a7, 1-$i/10);
+			}
+			}
+		}
+	}
+
+	.cos{
+		&{
+			padding: 20px;
+			background-color: blue;
+			display: block;
+		}
+		.cos1{
+			padding: 10px;
+			background-color: red;
+		}
+	}
+
+
+
+	.dlugoscSzerokoscUniwersalna {
+		width: 30px;
+  	height: 30px;
+	}
+
+
+
+
+
+.petla{
+	@extend .dlugoscSzerokoscUniwersalna;
+  margin: 10px 5px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 15px;
+	line-height: 30px;
+}
+
+nav {
+	&{
+		padding: 200px;
+		background-color: brown;
+	}
+	ul {
+		display: flex;
+		background-color: $globalColor;
+		padding: 20px;
+		list-style: none;
+		justify-content: space-between;
+		li {
+			background-color: blue;
+			width: 100px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			a{
+				color: red;
+				width: 20px;
+				height: 20px;
+				background-color: yellow;
+				text-align: center;
+				&:hover {
+					background-color: pink;
+				}
+			}
+		}
+	}
+}

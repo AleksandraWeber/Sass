@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.petla:nth-child(1):after {
+  content: "1"; }
+.petla:nth-child(1) {
+  background-color: #29b3a7;
+  opacity: 0.9; }
+
+.petla:nth-child(2):after {
+  content: "2"; }
+.petla:nth-child(2) {
+  background-color: #29b3a7;
+  opacity: 0.8; }
+
+.petla:nth-child(3):after {
+  content: "3"; }
+.petla:nth-child(3) {
+  background-color: #29b3a7;
+  opacity: 0.7; }
+
+.petla:nth-child(4):after {
+  content: "4"; }
+.petla:nth-child(4) {
+  background-color: #29b3a7;
+  opacity: 0.6; }
+
+.petla:nth-child(5):after {
+  content: "5"; }
+.petla:nth-child(5) {
+  background-color: #29b3a7;
+  opacity: 0.5; }
+
+.petla:nth-child(6):after {
+  content: "6"; }
+.petla:nth-child(6) {
+  background-color: #29b3a7;
+  opacity: 0.4; }
+
+.petla:nth-child(7):after {
+  content: "7"; }
+.petla:nth-child(7) {
+  background-color: #29b3a7;
+  opacity: 0.3; }
+
+.petla:nth-child(8):after {
+  content: "8"; }
+.petla:nth-child(8) {
+  background-color: #29b3a7;
+  opacity: 0.2; }
+
+.petla:nth-child(9):after {
+  content: "9"; }
+.petla:nth-child(9) {
+  background-color: #29b3a7;
+  opacity: 0.1; }
+
+.petla:nth-child(10):after {
+  content: "10"; }
+.petla:nth-child(10) {
+  background-color: #29b3a7;
+  opacity: 0; }
+
+.cos {
+  padding: 20px;
+  background-color: blue;
+  display: block; }
+.cos .cos1 {
+  padding: 10px;
+  background-color: red; }
+
+.dlugoscSzerokoscUniwersalna, .petla {
+  width: 30px;
+  height: 30px; }
+
+.petla {
+  margin: 10px 5px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 15px;
+  line-height: 30px; }
+
+nav {
+  padding: 200px;
+  background-color: brown; }
+nav ul {
+  display: flex;
+  background-color: green;
+  padding: 20px;
+  list-style: none;
+  justify-content: space-between; }
+  nav ul li {
+    background-color: blue;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    nav ul li a {
+      color: red;
+      width: 20px;
+      height: 20px;
+      background-color: yellow;
+      text-align: center; }
+      nav ul li a:hover {
+        background-color: pink; }
+
+/*# sourceMappingURL=styles.css.map */
